@@ -14,7 +14,10 @@
     <!-- Open Graph -->
     <meta property="og:title" id="og-title" content="TFG Cleaning Services | Professional Cleaning in FL">
     <meta property="og:description" id="og-description" content="Professional residential and commercial cleaning in Orange County, Seminole County, and Volusia County, FL.">
-    <meta property="og:image" content="logo.png">
+    <meta property="og:image" content="https://bio.tfgcleaningservices.com/midia/air-bnb-cleaning-service-orange-county-kitchen.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:url" content="https://bio.tfgcleaningservices.com">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="TFG Cleaning Services LLC">
@@ -162,7 +165,8 @@
 
         .profile p {
             font-size: 14px;
-            color: var(--text-muted);
+            font-weight: 600;
+            color: var(--text-dark);
             line-height: 1.65;
             margin-bottom: 18px;
         }
@@ -247,6 +251,7 @@
         }
 
         .link-icon.whatsapp  { color: #25d366; }
+        .link-icon.sms       { color: #007aff; }
         .link-icon.instagram { color: #e1306c; }
         .link-icon.email     { color: var(--blue-mid); }
         .link-icon.phone     { color: #2ecc71; }
@@ -425,6 +430,19 @@
                 <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
             </a>
 
+            <!-- SMS -->
+            <a href="sms:+14073356387"
+               id="link-sms"
+               class="link-item"
+               aria-label="SMS">
+                <div class="link-icon sms"><i class="fas fa-comment"></i></div>
+                <div class="link-text">
+                    <span id="sms-text">SMS</span>
+                    <span class="link-sub">+1 (407) 335-6387</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
+            </a>
+
             <!-- Email -->
             <a href="mailto:tfgcleaningsvcs@gmail.com"
                id="link-email"
@@ -481,7 +499,7 @@
             <p class="section-label" id="label-location">Location</p>
 
             <!-- Map -->
-            <a href="https://maps.google.com/?q=Sanford,FL,USA"
+            <a href="https://www.google.com.br/search?sca_esv=619f22f517338203&sxsrf=ANbL-n6kIaIdgmxjQDEG1iGo4imURStTsg:1779340507544&kgmid=/g/11zbnl63vj&q=TFG+CLEANING+SERVICES+LLC&shem=rimspwouoe&shndl=30&source=sh/x/loc/hdr/m1/2&kgs=119ee74baa07bbe9&utm_source=rimspwouoe,sh/x/loc/hdr/m1/2"
                class="link-item"
                target="_blank"
                rel="noopener"
@@ -490,6 +508,21 @@
                 <div class="link-text">
                     <span id="location-text">Sanford, FL</span>
                     <span class="link-sub" id="location-sub">Orange, Seminole &amp; Volusia Counties</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
+            </a>
+
+            <!-- Reviews -->
+            <a href="https://g.page/r/CdZvnC9Q6FRlEBM/review"
+               id="link-reviews"
+               class="link-item"
+               target="_blank"
+               rel="noopener"
+               aria-label="Reviews">
+                <div class="link-icon" style="color:#FFB81C"><i class="fas fa-star"></i></div>
+                <div class="link-text">
+                    <span id="reviews-text">Reviews</span>
+                    <span class="link-sub" id="reviews-sub">Share your feedback</span>
                 </div>
                 <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
             </a>
@@ -530,6 +563,7 @@
                 labelLocation:   'Location',
                 whatsapp:        'WhatsApp',
                 phone:           'Phone',
+                sms:             'SMS',
                 email:           'Email',
                 instagram:       'Instagram',
                 zelle:           'Zelle',
@@ -537,6 +571,8 @@
                 cashSub:         'We also accept cash payments',
                 location:        'Sanford, FL',
                 locationSub:     'Orange, Seminole & Volusia Counties',
+                reviews:         'Reviews',
+                reviewsSub:      'Share your feedback',
                 copyright:       '© 2025 TFG Cleaning Services LLC. All rights reserved.',
                 tagline:         'Professional cleaning — Orange, Seminole & Volusia Counties, FL',
                 zelleCopied:     'Zelle key copied!',
@@ -560,6 +596,7 @@
                 labelLocation:   'Ubicación',
                 whatsapp:        'WhatsApp',
                 phone:           'Teléfono',
+                sms:             'SMS',
                 email:           'Correo',
                 instagram:       'Instagram',
                 zelle:           'Zelle',
@@ -567,6 +604,8 @@
                 cashSub:         'También aceptamos pagos en efectivo',
                 location:        'Sanford, FL',
                 locationSub:     'Orange, Seminole y Volusia Counties',
+                reviews:         'Reseñas',
+                reviewsSub:      'Comparte tu opinión',
                 copyright:       '© 2025 TFG Cleaning Services LLC. Todos los derechos reservados.',
                 tagline:         'Limpieza profesional — Orange, Seminole y Volusia Counties, FL',
                 zelleCopied:     '¡Clave Zelle copiada!',
@@ -590,6 +629,7 @@
                 labelLocation:   'Localização',
                 whatsapp:        'WhatsApp',
                 phone:           'Telefone',
+                sms:             'SMS',
                 email:           'E-mail',
                 instagram:       'Instagram',
                 zelle:           'Zelle',
@@ -597,6 +637,8 @@
                 cashSub:         'Também aceitamos pagamento em dinheiro',
                 location:        'Sanford, FL',
                 locationSub:     'Orange, Seminole e Volusia Counties',
+                reviews:         'Avaliações',
+                reviewsSub:      'Compartilhe sua opinião',
                 copyright:       '© 2025 TFG Cleaning Services LLC. Todos os direitos reservados.',
                 tagline:         'Limpeza profissional — Orange, Seminole e Volusia Counties, FL',
                 zelleCopied:     'Chave Zelle copiada!',
@@ -656,6 +698,7 @@
             // Links
             document.getElementById('whatsapp-text').textContent  = t.whatsapp;
             document.getElementById('phone-text').textContent     = t.phone;
+            document.getElementById('sms-text').textContent       = t.sms;
             document.getElementById('email-text').textContent     = t.email;
             document.getElementById('instagram-text').textContent = t.instagram;
             document.getElementById('zelle-text').textContent     = t.zelle;
@@ -663,6 +706,8 @@
             document.getElementById('cash-sub').textContent       = t.cashSub;
             document.getElementById('location-text').textContent  = t.location;
             document.getElementById('location-sub').textContent   = t.locationSub;
+            document.getElementById('reviews-text').textContent   = t.reviews;
+            document.getElementById('reviews-sub').textContent    = t.reviewsSub;
 
             // Footer
             document.getElementById('footer-copyright').textContent = t.copyright;
@@ -734,28 +779,58 @@
         });
     </script>
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org JSON-LD - Local Business with Comprehensive Info -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "HomeAndConstructionBusiness",
+        "@type": "LocalBusiness",
+        "@id": "https://bio.tfgcleaningservices.com",
         "name": "TFG Cleaning Services LLC",
-        "description": "Professional residential and commercial cleaning services in Orange County, Seminole County, and Volusia County, FL.",
+        "description": "Professional residential and commercial cleaning services in Orange County, Seminole County, and Volusia County, Florida.",
         "url": "https://bio.tfgcleaningservices.com",
+        "image": "https://bio.tfgcleaningservices.com/midia/air-bnb-cleaning-service-orange-county-kitchen.jpg",
+        "logo": "https://bio.tfgcleaningservices.com/logo.png",
         "telephone": "+14073356387",
         "email": "tfgcleaningsvcs@gmail.com",
-        "image": "logo.png",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Sanford",
             "addressRegion": "FL",
             "addressCountry": "US"
         },
-        "areaServed": ["Orange County", "Seminole County", "Volusia County"],
+        "areaServed": [
+            {"@type": "AdministrativeArea", "name": "Orange County"},
+            {"@type": "AdministrativeArea", "name": "Seminole County"},
+            {"@type": "AdministrativeArea", "name": "Volusia County"}
+        ],
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {"@type": "GeoCoordinates", "latitude": "28.8039", "longitude": "-81.2743"},
+            "geoRadius": "25000"
+        },
         "serviceType": ["Residential Cleaning", "Commercial Cleaning", "Deep Cleaning", "Move-Out Cleaning", "Airbnb Cleaning", "Post-Construction Cleaning", "Office Cleaning"],
-        "availableLanguage": ["English", "Spanish", "Portuguese"],
+        "service": [
+            {"@type": "Service", "name": "Residential Cleaning", "description": "Professional house and apartment cleaning"},
+            {"@type": "Service", "name": "Commercial Cleaning", "description": "Office and retail space cleaning"},
+            {"@type": "Service", "name": "Deep Cleaning", "description": "Intensive cleaning for homes and businesses"},
+            {"@type": "Service", "name": "Move-Out Cleaning", "description": "Post-move cleaning services"},
+            {"@type": "Service", "name": "Airbnb Cleaning", "description": "Quick turnover cleaning for rental properties"},
+            {"@type": "Service", "name": "Post-Construction Cleaning", "description": "Cleaning after renovation and construction"}
+        ],
+        "priceRange": "$$",
         "paymentAccepted": ["Zelle", "Cash"],
-        "sameAs": ["https://www.instagram.com/tfgcleaning"]
+        "availableLanguage": ["English", "Spanish", "Portuguese"],
+        "foundingDate": "2025",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "telephone": "+14073356387",
+            "email": "tfgcleaningsvcs@gmail.com",
+            "availableLanguage": ["English", "Spanish", "Portuguese"]
+        },
+        "sameAs": [
+            "https://www.instagram.com/tfgcleaning"
+        ]
     }
     </script>
 
