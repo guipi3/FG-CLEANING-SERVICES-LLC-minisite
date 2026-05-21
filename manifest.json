@@ -1,0 +1,42 @@
+{
+  "name": "TFG Cleaning Services LLC",
+  "short_name": "TFG Cleaning",
+  "description": "Professional residential and commercial cleaning services in Sanford, FL",
+  "start_url": "/bio.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#003D7A",
+  "icons": [
+    {
+      "src": "logo-hojetech-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo-hojetech-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo-hojetech-64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo-hojetech-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo-hojetech-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
