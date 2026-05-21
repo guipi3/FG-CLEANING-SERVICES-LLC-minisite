@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="page-title">TFG Cleaning Services | Professional Cleaning in FL</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" id="meta-description" content="TFG Cleaning Services LLC offers professional residential and commercial cleaning in Orange County, Seminole County, and Volusia County, FL. Deep cleaning, move-out, Airbnb & more.">
+    <meta name="keywords" content="cleaning services, residential cleaning, commercial cleaning, deep cleaning, move out cleaning, Airbnb cleaning, Orange County FL, Seminole County, Volusia County, TFG Cleaning">
+    <meta name="author" content="TFG Cleaning Services LLC">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" id="og-title" content="TFG Cleaning Services | Professional Cleaning in FL">
+    <meta property="og:description" id="og-description" content="Professional residential and commercial cleaning in Orange County, Seminole County, and Volusia County, FL.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://bio.tfgcleaningservices.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="TFG Cleaning Services LLC">
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="en" href="https://bio.tfgcleaningservices.com?lang=en">
+    <link rel="alternate" hreflang="es" href="https://bio.tfgcleaningservices.com?lang=es">
+    <link rel="alternate" hreflang="pt" href="https://bio.tfgcleaningservices.com?lang=pt">
+    <link rel="alternate" hreflang="x-default" href="https://bio.tfgcleaningservices.com">
+
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --blue-dark:   #003D7A;
+            --blue-mid:    #0057A8;
+            --blue-light:  #4A9FE3;
+            --blue-pale:   #D6EAFF;
+            --gold:        #C9A84C;
+            --white:       #ffffff;
+            --bg:          #0b1f38;
+            --card:        #ffffff;
+            --text-dark:   #0b1f38;
+            --text-muted:  #4a627a;
+            --border:      #4A9FE3;
+            --hover-bg:    #D6EAFF;
+            --footer-text: #a8c8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(160deg, #0b1f38 0%, #003D7A 60%, #0057A8 100%);
+            min-height: 100vh;
+            padding: 24px 16px 40px;
+        }
+
+        .container {
+            max-width: 420px;
+            margin: 0 auto;
+        }
+
+        /* ── Language Selector ── */
+        .language-selector {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 22px;
+            flex-wrap: wrap;
+        }
+
+        .lang-btn {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: #fff;
+            padding: 7px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            backdrop-filter: blur(6px);
+        }
+
+        .lang-btn:hover {
+            background: rgba(255,255,255,0.22);
+        }
+
+        .lang-btn.active {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: #0b1f38;
+            font-weight: 700;
+        }
+
+        /* ── Profile Card ── */
+        .profile {
+            background: var(--card);
+            border-radius: 24px;
+            padding: 30px 22px 24px;
+            text-align: center;
+            margin-bottom: 16px;
+            border: 2px solid var(--border);
+            box-shadow: 0 8px 40px rgba(0,61,122,0.35);
+            animation: fadeIn 0.5s ease-out;
+            position: relative;
+        }
+
+        .logo-wrap {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid var(--blue-light);
+            overflow: hidden;
+            margin: 0 auto 18px;
+            background: #f0f7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(74,159,227,0.3);
+        }
+
+        .logo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile h1 {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--blue-dark);
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .profile-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--blue-pale);
+            color: var(--blue-mid);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+        }
+
+        .profile p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin-bottom: 18px;
+        }
+
+        /* ── Service Areas Pills ── */
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .area-pill {
+            background: var(--blue-pale);
+            color: var(--blue-dark);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* ── vCard Button inside profile ── */
+        .vcard-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--blue-dark), var(--blue-mid));
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px rgba(0,61,122,0.3);
+        }
+
+        .vcard-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,61,122,0.4);
+        }
+
+        /* ── Links Section ── */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+        }
+
+        .link-item {
+            background: var(--white);
+            border: 2px solid var(--border);
+            border-radius: 14px;
+            padding: 15px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            animation: fadeIn 0.5s ease-out;
+            box-shadow: 0 2px 12px rgba(0,61,122,0.1);
+        }
+
+        .link-item:hover {
+            background: var(--hover-bg);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,61,122,0.15);
+        }
+
+        .link-icon {
+            font-size: 20px;
+            width: 26px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .link-icon.whatsapp  { color: #25d366; }
+        .link-icon.instagram { color: #e1306c; }
+        .link-icon.email     { color: var(--blue-mid); }
+        .link-icon.phone     { color: #2ecc71; }
+        .link-icon.zelle     { color: #6d31b4; }
+        .link-icon.map       { color: var(--blue-dark); }
+
+        .link-text {
+            flex: 1;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .link-sub {
+            font-size: 11px;
+            font-weight: 400;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .link-arrow {
+            font-size: 13px;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        /* ── Section Divider ── */
+        .section-label {
+            text-align: center;
+            color: rgba(255,255,255,0.55);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin: 18px 0 10px;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+            padding-bottom: 10px;
+            font-size: 13px;
+            color: var(--footer-text);
+            line-height: 1.8;
+        }
+
+        .footer a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-logo {
+            margin-bottom: 6px;
+            opacity: 0.7;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        /* ── Notification Toast ── */
+        .notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0b1f38;
+            color: #fff;
+            padding: 12px 22px;
+            border-radius: 40px;
+            z-index: 1000;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1px solid var(--blue-light);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            display: none;
+            white-space: nowrap;
+        }
+
+        /* ── Animations ── */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 480px) {
+            body { padding: 16px 12px 36px; }
+            .profile { padding: 24px 16px 20px; }
+            .profile h1 { font-size: 20px; }
+            .link-item { padding: 13px 15px; }
+            .lang-btn { padding: 6px 11px; font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="en" onclick="changeLanguage('en')">
+            <i class="fas fa-globe-americas"></i> English
+        </button>
+        <button class="lang-btn" data-lang="es" onclick="changeLanguage('es')">
+            <i class="fas fa-globe-americas"></i> Español
+        </button>
+        <button class="lang-btn" data-lang="pt" onclick="changeLanguage('pt')">
+            <i class="fas fa-globe-americas"></i> Português
+        </button>
+    </div>
+
+    <div class="container" id="content">
+
+        <!-- Profile Card -->
+        <section class="profile" itemscope itemtype="https://schema.org/LocalBusiness">
+            <div class="logo-wrap">
+                <img src="logo.png" alt="TFG Cleaning Services LLC" loading="lazy" itemprop="image">
+            </div>
+
+            <h1 itemprop="name" id="profile-title">TFG Cleaning Services LLC</h1>
+
+            <span class="profile-badge"><i class="fas fa-shield-alt"></i> <span id="badge-text">Licensed &amp; Insured</span></span>
+
+            <p itemprop="description" id="profile-description">
+                Professional residential &amp; commercial cleaning in Orange County, Seminole County, and Volusia County, FL. Trusted, detail-oriented, and eco-friendly on request.
+            </p>
+
+            <!-- Service Area Pills -->
+            <div class="areas">
+                <span class="area-pill"><i class="fas fa-map-pin"></i> Orange County</span>
+                <span class="area-pill"><i class="fas fa-map-pin"></i> Seminole County</span>
+                <span class="area-pill"><i class="fas fa-map-pin"></i> Volusia County</span>
+            </div>
+
+            <!-- vCard Download -->
+            <a href="vcard.vcf" class="vcard-btn" download="TFG-Cleaning-Services.vcf">
+                <i class="fas fa-address-card"></i>
+                <span id="vcard-text">Save Contact</span>
+                <i class="fas fa-download"></i>
+            </a>
+
+            <div style="display:none" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Sanford</span>,
+                <span itemprop="addressRegion">FL</span>
+            </div>
+            <div style="display:none" itemprop="telephone">+14073356387</div>
+        </section>
+
+        <!-- ── Contact Links ── -->
+        <p class="section-label" id="label-contact">Contact</p>
+
+        <div class="links">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/14073356387"
+               id="link-whatsapp"
+               class="link-item"
+               target="_blank"
+               rel="noopener"
+               aria-label="WhatsApp">
+                <div class="link-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+                <div class="link-text">
+                    <span id="whatsapp-text">WhatsApp</span>
+                    <span class="link-sub">+1 (407) 335-6387</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+14073356387"
+               class="link-item"
+               aria-label="Phone">
+                <div class="link-icon phone"><i class="fas fa-phone"></i></div>
+                <div class="link-text">
+                    <span id="phone-text">Phone</span>
+                    <span class="link-sub">+1 (407) 335-6387</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:tfgcleaningsvcs@gmail.com"
+               id="link-email"
+               class="link-item"
+               aria-label="Email">
+                <div class="link-icon email"><i class="fas fa-envelope"></i></div>
+                <div class="link-text">
+                    <span id="email-text">Email</span>
+                    <span class="link-sub">tfgcleaningsvcs@gmail.com</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
+            </a>
+
+            <!-- ── Social ── -->
+            <p class="section-label" id="label-social" style="margin-top:6px">Social</p>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/tfgcleaning"
+               class="link-item"
+               target="_blank"
+               rel="noopener"
+               aria-label="Instagram">
+                <div class="link-icon instagram"><i class="fab fa-instagram"></i></div>
+                <div class="link-text">
+                    <span id="instagram-text">Instagram</span>
+                    <span class="link-sub">@tfgcleaning</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
+            </a>
+
+            <!-- ── Payment ── -->
+            <p class="section-label" id="label-payment">Payment</p>
+
+            <!-- Zelle -->
+            <div class="link-item" onclick="copyZelle()" id="zelle-btn" aria-label="Copy Zelle">
+                <div class="link-icon zelle"><i class="fas fa-bolt"></i></div>
+                <div class="link-text">
+                    <span id="zelle-text">Zelle</span>
+                    <span class="link-sub">Tap to copy key</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-copy"></i></div>
+            </div>
+
+            <!-- Cash -->
+            <div class="link-item" style="cursor:default">
+                <div class="link-icon" style="color:#e8b400"><i class="fas fa-money-bill-wave"></i></div>
+                <div class="link-text">
+                    <span id="cash-text">Cash Accepted</span>
+                    <span class="link-sub" id="cash-sub">We also accept cash payments</span>
+                </div>
+            </div>
+
+            <!-- ── Location ── -->
+            <p class="section-label" id="label-location">Location</p>
+
+            <!-- Map -->
+            <a href="https://maps.google.com/?q=Sanford,FL,USA"
+               class="link-item"
+               target="_blank"
+               rel="noopener"
+               aria-label="Location">
+                <div class="link-icon map"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="link-text">
+                    <span id="location-text">Sanford, FL</span>
+                    <span class="link-sub" id="location-sub">Orange, Seminole &amp; Volusia Counties</span>
+                </div>
+                <div class="link-arrow"><i class="fas fa-chevron-right"></i></div>
+            </a>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-logo">Powered by <a href="https://hojetech.com.br" target="_blank" rel="noopener">HojeTech</a></div>
+            <p id="footer-copyright">© 2025 TFG Cleaning Services LLC. All rights reserved.</p>
+            <p id="footer-tagline">Professional cleaning — Orange, Seminole &amp; Volusia Counties, FL</p>
+        </footer>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="notification" id="notification"></div>
+
+    <!-- ══ Multi-Language System ══ -->
+    <script>
+        const DEFAULT_LANGUAGE  = 'en';
+        const SUPPORTED_LANGUAGES = ['en', 'es', 'pt'];
+        const ZELLE_KEY = '14073356387';
+
+        const translations = {
+            en: {
+                pageTitle:       'TFG Cleaning Services | Professional Cleaning in FL',
+                metaDescription: 'TFG Cleaning Services LLC offers professional residential and commercial cleaning in Orange County, Seminole County, and Volusia County, FL.',
+                ogTitle:         'TFG Cleaning Services | Professional Cleaning in FL',
+                ogDescription:   'Professional residential and commercial cleaning in Orange County, Seminole County, and Volusia County, FL.',
+                profileTitle:    'TFG Cleaning Services LLC',
+                badgeText:       'Licensed & Insured',
+                profileDesc:     'Professional residential & commercial cleaning in Orange County, Seminole County, and Volusia County, FL. Trusted, detail-oriented, and eco-friendly on request.',
+                vcardText:       'Save Contact',
+                labelContact:    'Contact',
+                labelSocial:     'Social',
+                labelPayment:    'Payment',
+                labelLocation:   'Location',
+                whatsapp:        'WhatsApp',
+                phone:           'Phone',
+                email:           'Email',
+                instagram:       'Instagram',
+                zelle:           'Zelle',
+                cash:            'Cash Accepted',
+                cashSub:         'We also accept cash payments',
+                location:        'Sanford, FL',
+                locationSub:     'Orange, Seminole & Volusia Counties',
+                copyright:       '© 2025 TFG Cleaning Services LLC. All rights reserved.',
+                tagline:         'Professional cleaning — Orange, Seminole & Volusia Counties, FL',
+                zelleCopied:     'Zelle key copied!',
+                whatsappMsg:     'Hello! I would like to get a quote for cleaning services.',
+                emailSubject:    'Cleaning Services Quote — TFG Cleaning Services',
+                emailBody:       'Hello! I would like more information about your cleaning services.',
+                languageChanged: 'Language set to English',
+            },
+            es: {
+                pageTitle:       'TFG Cleaning Services | Limpieza Profesional en FL',
+                metaDescription: 'TFG Cleaning Services LLC ofrece servicios profesionales de limpieza residencial y comercial en Orange County, Seminole County y Volusia County, FL.',
+                ogTitle:         'TFG Cleaning Services | Limpieza Profesional en FL',
+                ogDescription:   'Servicios profesionales de limpieza en Orange County, Seminole County y Volusia County, FL.',
+                profileTitle:    'TFG Cleaning Services LLC',
+                badgeText:       'Licenciada y Asegurada',
+                profileDesc:     'Servicios profesionales de limpieza residencial y comercial en Orange County, Seminole County y Volusia County, FL. Confiable, detallada y ecológica bajo solicitud.',
+                vcardText:       'Guardar Contacto',
+                labelContact:    'Contacto',
+                labelSocial:     'Social',
+                labelPayment:    'Pago',
+                labelLocation:   'Ubicación',
+                whatsapp:        'WhatsApp',
+                phone:           'Teléfono',
+                email:           'Correo',
+                instagram:       'Instagram',
+                zelle:           'Zelle',
+                cash:            'Efectivo Aceptado',
+                cashSub:         'También aceptamos pagos en efectivo',
+                location:        'Sanford, FL',
+                locationSub:     'Orange, Seminole y Volusia Counties',
+                copyright:       '© 2025 TFG Cleaning Services LLC. Todos los derechos reservados.',
+                tagline:         'Limpieza profesional — Orange, Seminole y Volusia Counties, FL',
+                zelleCopied:     '¡Clave Zelle copiada!',
+                whatsappMsg:     '¡Hola! Me gustaría obtener un presupuesto para servicios de limpieza.',
+                emailSubject:    'Presupuesto de Limpieza — TFG Cleaning Services',
+                emailBody:       '¡Hola! Me gustaría más información sobre sus servicios de limpieza.',
+                languageChanged: 'Idioma cambiado a Español',
+            },
+            pt: {
+                pageTitle:       'TFG Cleaning Services | Limpeza Profissional na Flórida',
+                metaDescription: 'TFG Cleaning Services LLC oferece serviços profissionais de limpeza residencial e comercial em Orange County, Seminole County e Volusia County, FL.',
+                ogTitle:         'TFG Cleaning Services | Limpeza Profissional na FL',
+                ogDescription:   'Limpeza profissional residencial e comercial em Orange County, Seminole County e Volusia County, FL.',
+                profileTitle:    'TFG Cleaning Services LLC',
+                badgeText:       'Licenciada e Segurada',
+                profileDesc:     'Limpeza residencial e comercial profissional em Orange County, Seminole County e Volusia County, FL. Confiável, detalhista e eco-friendly sob consulta.',
+                vcardText:       'Salvar Contato',
+                labelContact:    'Contato',
+                labelSocial:     'Social',
+                labelPayment:    'Pagamento',
+                labelLocation:   'Localização',
+                whatsapp:        'WhatsApp',
+                phone:           'Telefone',
+                email:           'E-mail',
+                instagram:       'Instagram',
+                zelle:           'Zelle',
+                cash:            'Dinheiro Aceito',
+                cashSub:         'Também aceitamos pagamento em dinheiro',
+                location:        'Sanford, FL',
+                locationSub:     'Orange, Seminole e Volusia Counties',
+                copyright:       '© 2025 TFG Cleaning Services LLC. Todos os direitos reservados.',
+                tagline:         'Limpeza profissional — Orange, Seminole e Volusia Counties, FL',
+                zelleCopied:     'Chave Zelle copiada!',
+                whatsappMsg:     'Olá! Gostaria de solicitar um orçamento para serviços de limpeza.',
+                emailSubject:    'Orçamento de Limpeza — TFG Cleaning Services',
+                emailBody:       'Olá! Gostaria de mais informações sobre os serviços de limpeza.',
+                languageChanged: 'Idioma alterado para Português',
+            }
+        };
+
+        let currentLanguage = DEFAULT_LANGUAGE;
+
+        /* ── Helpers ── */
+        function getURLLang() {
+            const p = new URLSearchParams(window.location.search).get('lang');
+            return SUPPORTED_LANGUAGES.includes(p) ? p : null;
+        }
+
+        function getSavedLang() {
+            const s = localStorage.getItem('tfg-lang');
+            return SUPPORTED_LANGUAGES.includes(s) ? s : null;
+        }
+
+        function detectBrowserLang() {
+            const bl = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
+            return SUPPORTED_LANGUAGES.includes(bl) ? bl : DEFAULT_LANGUAGE;
+        }
+
+        function bestLang() {
+            return getURLLang() || getSavedLang() || detectBrowserLang();
+        }
+
+        /* ── Update UI ── */
+        function updateInterface(lang) {
+            const t = translations[lang];
+
+            // Meta
+            document.title = t.pageTitle;
+            document.getElementById('page-title').textContent        = t.pageTitle;
+            document.getElementById('meta-description').setAttribute('content', t.metaDescription);
+            document.getElementById('og-title').setAttribute('content', t.ogTitle);
+            document.getElementById('og-description').setAttribute('content', t.ogDescription);
+            document.documentElement.lang = lang;
+
+            // Profile
+            document.getElementById('profile-title').textContent      = t.profileTitle;
+            document.getElementById('badge-text').textContent         = t.badgeText;
+            document.getElementById('profile-description').textContent = t.profileDesc;
+            document.getElementById('vcard-text').textContent         = t.vcardText;
+
+            // Labels
+            document.getElementById('label-contact').textContent  = t.labelContact;
+            document.getElementById('label-social').textContent   = t.labelSocial;
+            document.getElementById('label-payment').textContent  = t.labelPayment;
+            document.getElementById('label-location').textContent = t.labelLocation;
+
+            // Links
+            document.getElementById('whatsapp-text').textContent  = t.whatsapp;
+            document.getElementById('phone-text').textContent     = t.phone;
+            document.getElementById('email-text').textContent     = t.email;
+            document.getElementById('instagram-text').textContent = t.instagram;
+            document.getElementById('zelle-text').textContent     = t.zelle;
+            document.getElementById('cash-text').textContent      = t.cash;
+            document.getElementById('cash-sub').textContent       = t.cashSub;
+            document.getElementById('location-text').textContent  = t.location;
+            document.getElementById('location-sub').textContent   = t.locationSub;
+
+            // Footer
+            document.getElementById('footer-copyright').textContent = t.copyright;
+            document.getElementById('footer-tagline').textContent   = t.tagline;
+
+            // Update WhatsApp & email hrefs
+            const waMsg = encodeURIComponent(t.whatsappMsg);
+            document.getElementById('link-whatsapp').href = `https://wa.me/14073356387?text=${waMsg}`;
+
+            const eSubj = encodeURIComponent(t.emailSubject);
+            const eBody = encodeURIComponent(t.emailBody);
+            document.getElementById('link-email').href = `mailto:tfgcleaningsvcs@gmail.com?subject=${eSubj}&body=${eBody}`;
+
+            // Active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+        }
+
+        /* ── Change Language ── */
+        function changeLanguage(lang) {
+            if (!SUPPORTED_LANGUAGES.includes(lang)) lang = DEFAULT_LANGUAGE;
+            currentLanguage = lang;
+            localStorage.setItem('tfg-lang', lang);
+
+            const url = new URL(window.location);
+            lang === DEFAULT_LANGUAGE ? url.searchParams.delete('lang') : url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url);
+
+            updateInterface(lang);
+            showNotification(translations[lang].languageChanged);
+        }
+
+        /* ── Copy Zelle ── */
+        function copyZelle() {
+            navigator.clipboard.writeText(ZELLE_KEY).then(() => {
+                showNotification(translations[currentLanguage].zelleCopied);
+            }).catch(() => {
+                const ta = document.createElement('textarea');
+                ta.value = ZELLE_KEY;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showNotification(translations[currentLanguage].zelleCopied);
+            });
+        }
+
+        /* ── Toast ── */
+        function showNotification(msg) {
+            const el = document.getElementById('notification');
+            el.textContent = msg;
+            el.style.display = 'block';
+            clearTimeout(el._t);
+            el._t = setTimeout(() => { el.style.display = 'none'; }, 3000);
+        }
+
+        /* ── Init ── */
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLanguage(bestLang());
+
+            // Keyboard shortcut: Shift+L to cycle language
+            document.addEventListener('keydown', e => {
+                if (e.shiftKey && e.key === 'L') {
+                    const i = (SUPPORTED_LANGUAGES.indexOf(currentLanguage) + 1) % SUPPORTED_LANGUAGES.length;
+                    changeLanguage(SUPPORTED_LANGUAGES[i]);
+                }
+            });
+        });
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "TFG Cleaning Services LLC",
+        "description": "Professional residential and commercial cleaning services in Orange County, Seminole County, and Volusia County, FL.",
+        "url": "https://bio.tfgcleaningservices.com",
+        "telephone": "+14073356387",
+        "email": "tfgcleaningsvcs@gmail.com",
+        "image": "logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sanford",
+            "addressRegion": "FL",
+            "addressCountry": "US"
+        },
+        "areaServed": ["Orange County", "Seminole County", "Volusia County"],
+        "serviceType": ["Residential Cleaning", "Commercial Cleaning", "Deep Cleaning", "Move-Out Cleaning", "Airbnb Cleaning", "Post-Construction Cleaning", "Office Cleaning"],
+        "availableLanguage": ["English", "Spanish", "Portuguese"],
+        "paymentAccepted": ["Zelle", "Cash"],
+        "sameAs": ["https://www.instagram.com/tfgcleaning"]
+    }
+    </script>
+
+</body>
+</html>
